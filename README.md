@@ -45,7 +45,17 @@ Automatic event-date reminders are not implemented yet.
 
 Do not commit AWS access keys, passwords, secrets, or private subscriber information. Review IAM policies and configuration before deploying this project in another AWS account.
 
+## Application images
+<img width="1080" height="720" alt="Screenshot 2026-10-13 201412" src="https://github.com/user-attachments/assets/120a0c23-281b-40d4-bfb0-a17fa27f90a3" />
+<img width="1920" height="1020" alt="Screenshot 2026-10-13 201455" src="https://github.com/user-attachments/assets/a07e9602-afed-4310-9bff-1a010ae9ddf6" />
+<img width="1920" height="1020" alt="Screenshot 2026-10-13 201524" src="https://github.com/user-attachments/assets/8f7371fd-21c9-494c-85a0-98c1e731bf03" />
+
+## Mail image
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/fc006c2c-36a5-4116-b89e-539578d88924" />
+
+
+
 ## Author
 
 VASANTH
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/7e0821a9-4dce-42b3-b200-e54948d23178" />
+
