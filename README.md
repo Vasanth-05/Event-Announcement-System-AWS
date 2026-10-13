@@ -16,6 +16,8 @@ S3 + CloudFront → API Gateway → Lambda → DynamoDB
 
 When a new event is created, Lambda stores it in DynamoDB and publishes a notification through Amazon SNS.
 
+<img width="1774" height="887" alt="Architecture" src="https://github.com/user-attachments/assets/157d3424-6d75-4ced-84d5-866267d00b4f" />
+
 ## AWS Services Used
 
 - Amazon S3
@@ -33,6 +35,10 @@ The core event creation, storage, retrieval, and email notification workflows ha
 
 Automatic event-date reminders are not implemented yet.
 
+## Configuration steps
+[AWS_Event_Announcement_System_Configuration_Steps.pdf](https://github.com/user-attachments/files/33392116/AWS_Event_Announcement_System_Configuration_Steps.pdf)
+
+
 ## Learning Outcomes
 
 - Building a serverless application on AWS
@@ -46,7 +52,7 @@ Automatic event-date reminders are not implemented yet.
 Do not commit AWS access keys, passwords, secrets, or private subscriber information. Review IAM policies and configuration before deploying this project in another AWS account.
 
 ## Application images
-<img width="1080" height="720" alt="Screenshot 2026-10-13 201412" src="https://github.com/user-attachments/assets/120a0c23-281b-40d4-bfb0-a17fa27f90a3" />
+<img width="1920" height="1020" alt="Screenshot 2026-10-13 201412" src="https://github.com/user-attachments/assets/120a0c23-281b-40d4-bfb0-a17fa27f90a3" />
 <img width="1920" height="1020" alt="Screenshot 2026-10-13 201455" src="https://github.com/user-attachments/assets/a07e9602-afed-4310-9bff-1a010ae9ddf6" />
 <img width="1920" height="1020" alt="Screenshot 2026-10-13 201524" src="https://github.com/user-attachments/assets/8f7371fd-21c9-494c-85a0-98c1e731bf03" />
 
