@@ -28,7 +28,6 @@ When a new event is created, Lambda stores it in DynamoDB and publishes a notifi
 - Amazon DynamoDB
 - Amazon SNS
 - AWS IAM
-- Amazon CloudWatch
 
 ## Project Status
 
