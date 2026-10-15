@@ -16,7 +16,8 @@ S3 + CloudFront → API Gateway → Lambda → DynamoDB
 
 When a new event is created, Lambda stores it in DynamoDB and publishes a notification through Amazon SNS.
 
-<img width="1774" height="887" alt="Architecture" src="https://github.com/user-attachments/assets/157d3424-6d75-4ced-84d5-866267d00b4f" />
+<img width="1672" height="941" alt="AWS Event Announcement Architecture Diagram" src="https://github.com/user-attachments/assets/d683baeb-5c89-45e6-bb88-01a1fe2b7fad" />
+
 
 ## AWS Services Used
 
