@@ -66,7 +66,7 @@
     </section>
 
     <section class="create-section section-wrap" id="create">
-      <div class="create-intro"><div class="eyebrow">FOR THE ORGANIZERS</div><h2>Have something<br>worth <em>sharing?</em></h2><p>Add an event to the community calendar. In the connected version, your announcement can reach subscribers by email.</p><div class="create-tip"><span>↳</span> This demo stores new events in this browser only.</div></div>
+      <div class="create-intro"><div class="eyebrow">FOR THE ORGANIZERS</div><h2>Have something<br>worth <em>sharing?</em></h2><p>Add an event to the community calendar. In the connected version, your announcement can reach subscribers by email.</p><div class="create-tip"><span>↳</span> Events are saved through the AWS API. Media uploads require secure S3 upload configuration.</div></div>
       <form id="create-form" class="create-form">
         <div class="form-top"><span>NEW EVENT</span><span class="form-index">01 / 01</span></div>
         <label for="event-title">Event title</label><input id="event-title" name="title" placeholder="e.g. Intro to Cloud Computing" required maxlength="90">
@@ -74,8 +74,14 @@
           <div><label for="event-date">Date</label><input id="event-date" name="date" type="date" required></div>
           <div><label for="event-location">Location</label><input id="event-location" name="location" placeholder="e.g. Chennai or Online" required maxlength="80"></div>
         </div>
-        <label for="event-category">Category</label><select id="event-category" name="category"><option>Workshop</option><option>Technology</option><option>Community</option><option>Networking</option><option>Talk</option><option>Other</option></select>
-        <label for="event-description">Short description</label><textarea id="event-description" name="description" rows="3" placeholder="What will people experience or learn?" required maxlength="280"></textarea>
+        <label for="event-category">Event type</label><select id="event-category" name="category" required>
+          <option>Meeting</option><option>Concert</option><option>Technical Event</option><option>Symposium</option><option>Cultural Event</option><option>Workshop</option><option>Other</option>
+        </select>
+        <label for="event-description">Description</label><textarea id="event-description" name="description" rows="3" placeholder="Event details, speakers, schedule, registration information…" required maxlength="1000"></textarea>
+        <label for="event-link">Meeting, registration, or video link (optional)</label><input id="event-link" name="eventLink" type="url" placeholder="https://…" maxlength="1500">
+        <label for="event-media">Photos or videos (optional)</label><input id="event-media" name="media" type="file" accept="image/jpeg,image/png,image/webp,video/mp4,video/webm" multiple>
+        <p class="upload-help">Photos: JPG, PNG, WebP. Videos: MP4, WebM. Uploads require the S3 upload API to be configured before this feature can publish files.</p>
+        <div id="media-preview" class="media-preview" aria-live="polite"></div>
         <button class="button button-dark submit-event" type="submit">Add event to calendar <span>↗</span></button>
         <p class="form-message" id="create-message" role="status"></p>
       </form>
